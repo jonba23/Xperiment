@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Bevan');
+
+html,
+body{
+    background-color:black;
+    margin:0;
+    display:flex;
+    width: 100vw;
+    resize:none;
+    padding:0;
+    color: white;
+    font-size: 1.2em;
+    height:100%;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+
+
+nav.nav{
+display: flex;
+position:relative;
+left: 0%;
+background-color: black;
+height: 50%;
+padding:8px;
+color:white;
+margin:1px;
+flex-direction: column;
+
+}
+
+nav.nav div#cube--container{
+    object-fit:scale-down;
+    display:flex;
+    flex-basis:auto;
+    
+  
+}
+nav.nav div#cube--container{
+    
+flex-shrink: 1;
+}
+nav.nav div#cube--container canvas{
+    max-width: inherit;
+}
+
+
+nav.nav ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    text-emphasis: none;
+    text-decoration: none;
+    font-family: 'Bevan',sans-serif;
+}
+
+ ul li a
+{
+    display:block;
+    padding-bottom:10px ;
+    text-emphasis: none;
+    text-decoration: none;
+}
+
+ul li a:visited, ul li a:link{
+    color:white;
+   
+}
+
+nav ul li a:hover,
+nav ul li a:active{
+    text-decoration: underline;
+}
+
+
+main{
+position:relative;
+padding-bottom: 100px;
+overflow-wrap: normal;
+background-color: inherit;
+width:inherit;
+text-align: center;
+height:inherit;
+font-family: 'Bevan',sans-serif;
+overflow-wrap: normal;
+
+
+}
+
+main header.header{
+    margin-top: 20px;
+    text-align: center;
+   
+    
+    
+}
+
+
+main header.header img#headerLogo{
+        margin:0;
+        object-fit:cover;
+        width:50%;
+        height:50%;
+      
+        
+        
+       
+      
+        
+    }
+
+main span.players{
+position:relative;
+white-space: pre-wrap;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+   width: 100%;
+   margin:0;
+   padding:30px;
+   justify-content: center;
+   margin:3px;
+  
+
+}
+
+main span.players div.window{
+    vertical-align: top;
+   text-align: center;
+    height:40%;
+    width:45%;
+    overflow-y: hidden;
+    justify-self: center;
+    object-fit: scale-down;
+    margin: 4px;
+    
+
+}
+main span.players div.window div#windowyt{
+    padding-bottom: 56.25%;
+}
+main span.players div.window div#windowyt iframe{
+    max-width:60%;
+}
+
+
+main span.players div.window div#windowig {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+   
+
+
+
+main span.players div.window div#windowtwt{
+text-align: center;
+max-width:100%;
+margin:0;
+overflow-y:auto;
+height:400px;
+white-space: none;
+vertical-align: top;
+ 
+}
+
+
+main span.players div#windowtwt label{
+    position: sticky;
+    
+}
+
+
+
+main span.players:last-child{
+    margin-bottom:20%;
+}
+main span.players div#window{
+    max-width: 60%;
+}
+
+.footer{
+font-family: 'Bevan',sans-serif;
+border-style:inset;
+position:fixed;
+text-align: center;
+width:100%;
+bottom:0;
+height:4%;
+background-color:white;
+padding: var(--nav-border-width);
+
+color: black;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 1000px) {
+    body{
+        font-size:0.5em;
+        height:100vh;
+    }
+    nav{
+        width:9em;
+    }
+    nav.nav canvas#3dcube{
+        width: 6em;
+    }
+    main span.players div.window{
+        height:20%;
+     width:100%;
+
+    }
+    main span.players{
+        width:100%;
+    }
+
+ 
+}
+
+@media only screen and (max-width:600px){
+    nav{
+        font-size:1.5em;
+        max-width:10em;
+    }
+    body{
+        font-size:0.7em;
+    }
+    main span.players:last-child{
+        margin-bottom:30%;
+    }
+    main span.players div#window div#windowsp label{
+        margin-bottom:40%;
+    }
+}
